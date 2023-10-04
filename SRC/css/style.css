@@ -3,7 +3,7 @@ body {
     overflow: hidden;
 }
 
-main::after{
+.after::after {
     content: "";
     position: fixed;
     top: 0;
@@ -11,8 +11,9 @@ main::after{
     min-height: 100vh;
     width: 100vw;
 
-    background: linear-gradient(-233deg, black 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
+    background: linear-gradient(-233deg, black 20%, rgba(0, 0, 0, 0) 65%) no-repeat;
 }
+
 
 main .personagem {
     display: none;
@@ -50,21 +51,22 @@ main .personagem .imagem {
     margin-bottom: 20px;
 }
 
-.conteudo .descricao{
+.conteudo .descricao {
     color: white;
     font-family: "Rubik";
     line-height: 24px;
 }
 
-.conteudo .logo{
+.conteudo .logo {
     background-image: url(../imagens/one-piece-logo.png);
     width: 230px;
     height: 100px;
     background-size: cover;
     margin-bottom: 35px;
+    cursor: pointer;
 }
 
-.botoes{
+.botoes {
     position: fixed;
     top: 0;
     right: 0;
@@ -72,29 +74,30 @@ main .personagem .imagem {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 180px;
+    width: 170px;
     align-items: center;
     justify-content: center;
-
-    gap: 20px;
+	
+    gap: 15px;
     background-color: rgba(0, 0, 0, 0.3);
+	z-index:10;
+	
 }
 
-.botoes .botao{
+.botoes .botao {
     border: none;
     background: black;
     cursor: pointer;
     border-radius: 50%;
 }
 
-.botoes .botao img{
+.botoes .botao img {
     border-radius: 50%;
+    width: 78px;
 }
 
-.botoes .botao.selecionado{
+.botoes .botao.selecionado {
     transform: scale(1.2);
-    box-shadow: 0 0 10px #D9D9D9;
-
+    box-shadow: 0 0 20px #D9D9D9;
 }
-
 
